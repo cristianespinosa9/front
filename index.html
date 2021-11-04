@@ -4,68 +4,95 @@
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <link href="css/estilos.css" rel="stylesheet"/>
     <title>Reto3</title>
 </head>
 <body>
 
     <h1> Categorias</h1>
-    <div id="resultado1"></div>
-    <button onclick="traerInformacionCategorias()" > Consultar Categorias</button>
+    
+    <table>
+        <tr>
+        <td><div id="resultado1"></div></td>
+        </tr>
+    </table>
+
+    <script type="text/javascript"> 
+        window.onload = autoInicioCategoria();
+    </script>
     
     <div>
+        
         <input type="text" id="Cname" placeholder="name">
         <input type="text" id="Cdescription" placeholder="description">
-       
+        
         
     </div>
+
+    <button onclick="traerInformacionCategorias()" > Consultar Categorias</button>
     <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+    
 
 
     <h1> Games</h1>
     <div id="resultado2"></div>
-    <button onclick="traerInformacionGames()" > Consultar Games</button>
+    <script type="text/javascript"> 
+        window.onload = autoInicioGames();
+    </script>
+    
     
     <div>
         <input type="text" id="Gname" placeholder="name">
         <input type="text" id="Gdeveloper" placeholder="developer">
         <input type="number" id="Gyear" placeholder="year">
-        <input type="text" id="Gdescription" placeholder="description">    
+        <input type="text" id="Gdescription" placeholder="description">  
+        
     </div>
+    <button onclick="traerInformacionGames()" > Consultar Games</button>
     <button onclick="guardarInformacionGames()">Guardar Games</button>
 
     <h1> Clientes</h1>
     <div id="resultado3"></div>
-    <button onclick="traerInformacionClientes()" > Consultar Clientes</button>
+    <script type="text/javascript"> 
+        window.onload = autoInicioCliente();
+    </script>
     
     <div>
-        <input type="text" id="CLemail" placeholder="email">
-        <input type="text" id="CLpassword" placeholder="password">
-        <input type="text" id="CLname" placeholder="name">
-        <input type="number" id="CLage" placeholder="age">  
+        <input type="text" id="Clemail" placeholder="email">
+        <input type="text" id="Clpassword" placeholder="password">
+        <input type="text" id="Clname" placeholder="name">
+        <input type="number" id="Clage" placeholder="age">  
     </div>
+    <button onclick="traerInformacionClientes()" > Consultar Clientes</button>
     <button onclick="guardarInformacionClientes()">Guardar Clientes</button>
 
 
     <h1> Mensaje</h1>
     <div id="resultado4"></div>
-    <button onclick="traerInformacionMessage()" > Consultar Mensaje</button>
+    <script type="text/javascript"> 
+        window.onload = autoInicioMessage();
+    </script>
     
     <div>
         <input type="text" id="messageText" placeholder="Mensaje">
          
     </div>
+    <button onclick="traerInformacionMessage()" > Consultar Mensaje</button>
     <button onclick="guardarInformacionMessage()">Guardar Mensaje</button>
 
 
     <h1> Reservacion</h1>
     <div id="resultado5"></div>
-    <button onclick="traerInformacionReservation()" > Consultar Reservacion</button>
+    <script type="text/javascript"> 
+        window.onload = autoInicioReservation();
+    </script>
     
     <div>
         <input type="datetime-local" id="startDate" placeholder="FechaInicio">
-        <input type="datetime-port" id="devolutionDate" placeholder="FechaDevolucion">
+        <input type="datetime-local" id="devolutionDate" placeholder="FechaDevolucion">
         <input type="text" id="status" placeholder="Estado">
     </div>
+    <button onclick="traerInformacionReservation()" > Consultar Reservacion</button>
     <button onclick="guardarInformacionReservation()">Guardar Reservacion</button>
 
 </body>
