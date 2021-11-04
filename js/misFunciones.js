@@ -1,6 +1,6 @@
 function autoInicioCategoria(){
     $.ajax({
-        url:"http://localhost:8080/api/Category/all",
+        url:"http://129.151.114.127:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -19,7 +19,7 @@ function autoInicioCategoria(){
 
 function traerInformacionCategorias(){
     $.ajax({
-        url:"http://localhost:8080/api/Category/all",
+        url:"http://129.151.114.127:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -56,7 +56,7 @@ function guardarInformacionCategorias(){
         dataType: 'JSON',
         data: JSON.stringify(var2),
         
-        url:"http://localhost:8080/api/Category/save",
+        url:"http://129.151.114.127:8080/api/Category/save",
        
         
         success:function(response) {
@@ -89,7 +89,7 @@ function actualizarInformacionCategorias(idElemento){
     console.log(myData);
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://localhost:8080/api/Category/update",
+        url:"http://129.151.114.127:8080/api/Category/update",
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -112,7 +112,7 @@ function borrarCategoria(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://localhost:8080/api/Category/"+idElemento,
+        url:"http://129.151.114.127:8080/api/Category/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
@@ -131,7 +131,7 @@ function borrarCategoria(idElemento){
 function autoInicioGames(){
     
     $.ajax({
-        url:"http://localhost:8080/api/Game/all",
+        url:"http://129.151.114.127:8080/api/Game/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -149,7 +149,7 @@ function autoInicioGames(){
 
 function traerInformacionGames(){
     $.ajax({
-        url:"http://localhost:8080/api/Game/all",
+        url:"http://129.151.114.127:8080/api/Game/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -190,7 +190,7 @@ function guardarInformacionGames(){
         dataType: 'JSON',
         data: JSON.stringify(var3),
         
-        url:"http://localhost:8080/api/Game/save",
+        url:"http://129.151.114.127:8080/api/Game/save",
        
         
         success:function(response) {
@@ -223,7 +223,7 @@ function actualizarInformacionGames(idElemento){
     console.log(myData);
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://localhost:8080/api/Game/update",
+        url:"http://129.151.114.127:8080/api/Game/update",
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -248,7 +248,7 @@ function borrarGames(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://localhost:8080/api/Game/"+idElemento,
+        url:"http://129.151.114.127:8080/api/Game/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
@@ -268,7 +268,7 @@ function borrarGames(idElemento){
 function autoInicioCliente(){
     console.log("se esta ejecutando")
     $.ajax({
-        url:"http://localhost:8080/api/Client/all",
+        url:"http://129.151.114.127:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -299,7 +299,7 @@ function pintarCliente(respuesta){
 
 function traerInformacionClientes(){
     $.ajax({
-        url:"http://localhost:8080/api/Client/all",
+        url:"http://129.151.114.127:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -326,7 +326,7 @@ function guardarInformacionClientes(){
         dataType: 'JSON',
         data: JSON.stringify(var2),
         
-        url:"http://localhost:8080/api/Client/save",
+        url:"http://129.151.114.127:8080/api/Client/save",
        
         
         success:function(response) {
@@ -360,7 +360,7 @@ function actualizarInformacionCliente(idElemento){
     console.log(myData);
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://localhost:8080/api/Client/update",
+        url:"http://129.151.114.127:8080/api/Client/update",
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -385,7 +385,7 @@ function borrarCliente(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://localhost:8080/api/Client/"+idElemento,
+        url:"http://129.151.114.127:8080/api/Client/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
@@ -405,7 +405,7 @@ function borrarCliente(idElemento){
 function autoInicioMessage(){
     
     $.ajax({
-        url:"http://localhost:8080/api/Message/all",
+        url:"http://129.151.114.127:8080/api/Message/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -420,7 +420,7 @@ function autoInicioMessage(){
 
 function traerInformacionMessage(){
     $.ajax({
-        url:"http://localhost:8080/api/Message/all",
+        url:"http://129.151.114.127:8080/api/Message/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -455,7 +455,7 @@ function guardarInformacionMessage(){
         dataType: 'JSON',
         data: JSON.stringify(var5),
         
-        url:"http://localhost:8080/api/Message/save",
+        url:"http://129.151.114.127:8080/api/Message/save",
        
         
         success:function(response) {
@@ -487,7 +487,7 @@ function actualizarInformacionMessage(idElemento){
     console.log(myData);
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://localhost:8080/api/Message/update",
+        url:"http://129.151.114.127:8080/api/Message/update",
         type:"PUT",
         data:dataToSend,
         contentType:"application/JSON",
@@ -508,7 +508,7 @@ function borrarMessage(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://localhost:8080/api/Message/"+idElemento,
+        url:"http://129.151.114.127:8080/api/Message/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
@@ -531,7 +531,7 @@ function borrarMessage(idElemento){
 function autoInicioReservation(){
     
     $.ajax({
-        url:"http://localhost:8080/api/Reservation/all",
+        url:"http://129.151.114.127:8080/api/Reservation/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -547,7 +547,7 @@ function autoInicioReservation(){
 
 function traerInformacionReservation(){
     $.ajax({
-        url:"http://localhost:8080/api/Reservation/all",
+        url:"http://129.151.114.127:8080/api/Reservation/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -586,7 +586,7 @@ function guardarInformacionReservation(){
         dataType: 'JSON',
         data: JSON.stringify(var6),
         
-        url:"http://localhost:8080/api/Reservation/save",
+        url:"http://129.151.114.127:8080/api/Reservation/save",
        
         
         success:function(response) {
@@ -618,7 +618,7 @@ function guardarInformacionReservation(){
         console.log(myData);
         let dataToSend=JSON.stringify(myData);
         $.ajax({
-            url:"http://localhost:8080/api/Reservation/update",
+            url:"http://129.151.114.127:8080/api/Reservation/update",
             type:"PUT",
             data:dataToSend,
             contentType:"application/JSON",
@@ -641,7 +641,7 @@ function guardarInformacionReservation(){
         };
         let dataToSend=JSON.stringify(myData);
         $.ajax({
-            url:"http://localhost:8080/api/Reservation/"+idElemento,
+            url:"http://129.151.114.127:8080/api/Reservation/"+idElemento,
             type:"DELETE",
             data:dataToSend,
             contentType:"application/JSON",
