@@ -1,8 +1,160 @@
-h1{
-    color:darkblue
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-div{
-    padding: 0.5em;
-    border: 1px solid rgba(0,0,0,0.2);
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+    }
+
+body {	font-family: 'Raleway', sans-serif;
+	background: #464343a1;
+	text-align: center;
+	color: #fff;
+}
+p{font-family: 'Lato',Arial,sans-serif;}
+section {
+	margin: 0 auto;
+	padding: 5em 3em;
+	text-align: center;
+}
+#resultado1{
+	
+	margin-left: 490px;
+	margin-right: 50px;
+	text-align: center;
+  	
+}
+#resultado2{
+	
+	margin-left: 350px;
+	margin-right: 50px;
+	text-align: center;
+  	
+}
+#resultado3{
+	
+	margin-left: 380px;
+	margin-right: 50px;
+	text-align: center;
+}
+#resultado4{
+	
+	margin-left: 380px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+#resultadoStatus{
+	
+	margin-left: 540px;
+	margin-right: 50px;
+	text-align: center;
+}
+#resultadoDate{
+	
+	margin-left: 380px;
+	margin-right: 50px;
+	text-align: center;
+}
+#resultadoClientes{
+	
+	margin-left: 490px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+
+
+table,
+    th{
+		
+		font-weight: 700;
+		text-align:center;
+        border: 2px solid rgb(241, 243, 245);
+        border-collapse: collapse;
+	}
+
+    td {
+		
+		font-weight: normal;
+        text-align:center;
+        border: 2px solid rgb(241, 243, 245);
+        border-collapse: collapse;
+    }
+
+
+.color-8 {
+
+	background: #f0f0f0d0;
+}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 20px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+/* Effect 7: second border slides up */
+.cl-effect-7 a {
+	padding: 12px 10px 10px;
+	color: #566473;
+	text-shadow: none;
+	font-weight: 700;
+}
+
+.cl-effect-7 a::before,
+.cl-effect-7 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #566473;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: scale(0.85);
+	-moz-transform: scale(0.85);
+	transform: scale(0.85);
+}
+
+.cl-effect-7 a::after {
+	opacity: 0;
+	-webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: top 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+.cl-effect-7 a:hover::before,
+.cl-effect-7 a:hover::after,
+.cl-effect-7 a:focus::before,
+.cl-effect-7 a:focus::after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+
+.cl-effect-7 a:hover::after,
+.cl-effect-7 a:focus::after {
+	top: 0%;
+	opacity: 1;
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Front Reto5</title>
+<meta name="description" content="Este es un documento HTML5">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link href="css/estilos.css" rel="stylesheet"/>
+    <title>Front Reto 5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFuncionesGames.js"></script>
+</head>
+
+<section class="color-8">
+    <nav class="cl-effect-7">
+    
+        <a href="index.html">Principal</a>
+        <a href="Reportes.html">Reportes</a>
+        <a href="Categorias.html">Categorias</a>
+        <a href="Clientes.html">Clientes</a>
+        <a href="Mensajes.html">Mensajes</a>
+        <a href="Reservaciones.html">Reservaciones</a>
+        <a href="Games.html">Games</a>
+    
+</nav>
+</section>
+
+<body>
+    
+        <br><br>    
+        <div id="resultado2"></div>
+        
+        <br>
+        <label>Nombre:</label>
+        <input class="controlGames" type="text" id="Gname" placeholder="Escriba el nombre"><br>
+        <label>Desarrollador:</label>
+        <input class="controlGames" type="text" id="Gdeveloper" placeholder="Escriba el desarrollador"><br>
+        <label>Año:</label>
+        <input class="controlGames" type="number" id="Gyear" placeholder="Año"><br>
+        <label>Descripcion:</label>
+        <input class="controlGames" type="text" id="Gdescription" placeholder="Escirba descripcion">  
+        <select id="select-category"></select>
+        <br>
+        <script type="text/javascript">
+            window.onload = autoInicioCategoria();
+        </script>
+        <script type="text/javascript">
+            window.onload = traerInformacionGames();
+        </script>
+        
+    
+    
+    <button onclick="traerInformacionGames()" >Consultar Games</button>
+    <button onclick="guardarInformacionGames()">Guardar Games</button>
+
+
+
+</body>
+</html>
